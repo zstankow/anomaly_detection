@@ -2,7 +2,7 @@
 
 These two scripts process sensor data and calculate the MSE for three different models: moving window model, fixed model, and start fixed model. 
 
-The script `day_to_day.py` is designed for autonomous daily detection. The results are saved to a JSON file and are updated within a CSV file. The other script `run_all.py` is designed for cycles that have already completed. The results are saved to a CSV file `results.csv`, which contains information such as the MSE values for the moving window model, the fixed model, and the fixed start model, as well as information about environmental conditions. In addition, the results file contains MSE values of each individual sensor as well as values pertaining to environmental conditions which allows for explainability of results and more insight into what caused the anomaly to occur. 
+The script `day_to_day.py` is designed for autonomous daily detection. The results are saved to a JSON file and are updated within a CSV file. The other script `run_all.py` is designed for cycles that have already completed. The results are saved to a CSV file `results.csv`, which contains information such as the MSE values for the moving window model, the fixed model, and the fixed start model, as well as information about environmental conditions and whether an anomaly was detected during a particular session. In addition, the results file contains MSE values of each individual sensor as well as values pertaining to environmental conditions which allows for explainability of results and more insight into what caused the anomaly to occur. 
 
 An example plot of the MSE for different models.
 
